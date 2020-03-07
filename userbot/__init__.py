@@ -45,18 +45,18 @@ CONFIG_CHECK = os.environ.get(
 
 if CONFIG_CHECK:
     LOGS.info(
-        "Please remove the line mentioned in the first hashtag from the config.env file"
+        ""
     )
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_KEY = os.environ.get("API_KEY", "80813")
+API_HASH = os.environ.get("API_HASH", "049e9d7348aeea6ff49260616dece254")
 
 TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", None)
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOIwBu0Og37-us26MebnYBD91Ayxyz_isOr2ES_CcMquQJvIrvXbGP3CW_h7Mx9KUe4wvj_2kbSGHFYid6Bs0BcEmOJ7zknsb6PqwgjB_MEO_JLHuhmJcQDgnlG0DzBooKN7IHwnhgs4EFzMbyV524OnnlqQnO5M6RioH9Sq7-5IiAnjqhVxUrZPjP2uXkSGswF9rhpYQuNiEWPFwAiGXkDAYKpmu18DdWtjYngn_WKhTl1-OD0uFvVwyoGhIZEiXDwwiq3S1yRM2Pfk4O8bkTXJx2wZzalSrCWSTF2d1k0WBZkFEHjg4vOLVoOUGmRluxiwj4iG4yxH_M2iTATA9rpFFeJg=")
 
 # Logging channel/group ID configuration.
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
